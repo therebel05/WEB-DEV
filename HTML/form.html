@@ -14,43 +14,49 @@
       <!-- Personal Details -->
       <h2>Personal Details</h2>
 
-      <label for="">First Name:</label>
-      <input type="text" name="firstName" placeholder="e.g. Arjun" />
+      <label for="fname">First Name:</label>
+      <input type="text" name="firstName" id="fname" placeholder="e.g. Arjun" />
       <br /><br />
-      <label for="">Lase Name: </label>
-      <input type="text" name="lastName" placeholder="e.g. Kumar" />
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lastName" id="lname" placeholder="e.g. Kumar" />
       <br /><br />
-      <label for="">Date of Birth: </label>
-      <input type="date" name="dob" />
+      <label for="dob">Date of Birth: </label>
+      <input type="date" name="dob" id="dob" />
       <br /><br />
       <label for="">Gender:</label>
       <br />
-      <input type="radio" name="gender" />
-      <label for="">Male</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
       <br />
-      <input type="radio" name="gender" />
-      <label for="">Female</label>
+      <input type="radio" name="gender" id="female" value="male" />
+      <label for="female">Female</label>
       <br />
-      <input type="radio" name="gender" />
-      <label for="">Other</label>
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
       <br /><br />
-      <label for="">Upload Your Photo: </label>
+      <label for="file">Upload Your Photo: </label>
       <br />
-      <input type="file" />
+      <input type="file" id="file" name="file" />
       <br /><br />
       <hr />
 
       <!-- Contact Information -->
       <h2>Contact Information</h2>
-      <label for="">Email Address: </label>
-      <input type="email" name="email" placeholder="you@example.com" />
+      <label for="email">Email Address: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="you@example.com"
+      />
       <br /><br />
-      <label for="">Phone Number: </label>
-      <input type="tel" name="phone" placeholder="e.g. 8290764589" />
+      <label for="phone">Phone Number: </label>
+      <input type="tel" name="phone" id="phone" placeholder="e.g. 8290764589" />
       <br /><br />
-      <label for="">Mailing Address: </label>
+      <label for="mail">Mailing Address: </label>
       <textarea
         name="address"
+        id="mail"
         placeholder="test address"
         cols="15"
         rows="5"
@@ -60,14 +66,51 @@
 
       <!-- Academic Information -->
       <h2>Academic Information</h2>
-      <label for="">Select Your Course</label>
+      <label for="course">Select Your Course</label>
       <br />
-      <select name="course">
+      <select name="course" id="course">
         <option value="">--Choose a course--</option>
         <option value="Btech">Btech</option>
         <option value="BCA">BCA</option>
         <option value="BA">BA</option>
       </select>
+      <br /><br />
+      <label for="">Extracurricular Activities: </label>
+      <br />
+      <input type="checkbox" name="activity" id="sports" value="sports" />
+      <label for="sports">Sports</label>
+      <br />
+      <input type="checkbox" name="activity" id="music" value="music" />
+      <label for="music">Music & Arts</label>
+      <br />
+      <input type="checkbox" name="activity" id="tech" value="tech" />
+      <label for="tech">Technology Clubs</label>
+      <br />
+      <input type="checkbox" name="activity" id="volunteer" value="volunteer" />
+      <label for="volunteer">Volunteering</label>
+      <br /><br />
+      <hr />
+
+      <!-- Creating Account -->
+      <label for="pass">Create a Password: </label>
+      <input type="password" name="password" id="pass" />
+      <br /><br />
+      <label for="ques">Security Question: </label>
+      <select name="Question" id="ques">
+        <option value="What was your first pet's name?">
+          What was your first pet's name?
+        </option>
+      </select>
+      <br /><br />
+      <label for="ans">Security Answer: </label>
+      <input type="text" name="answer" id="ans" />
+      <br /><br />
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="agree">I agree to the Terms and Conditions</label>
+      <br /><br />
+      <hr />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear Form" />
     </form>
   </body>
 </html>
