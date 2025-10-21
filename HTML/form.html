@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Page</title>
+  </head>
+  <body>
+    <h1>University Registration Form</h1>
+    <p>Please fill out the form below to register</p>
+    <hr />
+
+    <form>
+      <!-- Personal Details -->
+      <h2>Personal Details</h2>
+
+      <label for="">First Name:</label>
+      <input type="text" name="firstName" placeholder="e.g. Arjun" />
+      <br /><br />
+      <label for="">Lase Name: </label>
+      <input type="text" name="lastName" placeholder="e.g. Kumar" />
+      <br /><br />
+      <label for="">Date of Birth: </label>
+      <input type="date" name="dob" />
+      <br /><br />
+      <label for="">Gender:</label>
+      <br />
+      <input type="radio" name="gender" />
+      <label for="">Male</label>
+      <br />
+      <input type="radio" name="gender" />
+      <label for="">Female</label>
+      <br />
+      <input type="radio" name="gender" />
+      <label for="">Other</label>
+      <br /><br />
+      <label for="">Upload Your Photo: </label>
+      <br />
+      <input type="file" />
+      <br /><br />
+      <hr />
+
+      <!-- Contact Information -->
+      <h2>Contact Information</h2>
+      <label for="">Email Address: </label>
+      <input type="email" name="email" placeholder="you@example.com" />
+      <br /><br />
+      <label for="">Phone Number: </label>
+      <input type="tel" name="phone" placeholder="e.g. 8290764589" />
+      <br /><br />
+      <label for="">Mailing Address: </label>
+      <textarea
+        name="address"
+        placeholder="test address"
+        cols="15"
+        rows="5"
+      ></textarea>
+      <br /><br />
+      <hr />
+
+      <!-- Academic Information -->
+      <h2>Academic Information</h2>
+      <label for="">Select Your Course</label>
+      <br />
+      <select name="course">
+        <option value="">--Choose a course--</option>
+        <option value="Btech">Btech</option>
+        <option value="BCA">BCA</option>
+        <option value="BA">BA</option>
+      </select>
+    </form>
+  </body>
+</html>
