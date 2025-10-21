@@ -15,7 +15,13 @@
       <h2>Personal Details</h2>
 
       <label for="fname">First Name:</label>
-      <input type="text" name="firstName" id="fname" placeholder="e.g. Arjun" />
+      <input
+        type="text"
+        name="firstName"
+        id="fname"
+        placeholder="e.g. Arjun"
+        required
+      />
       <br /><br />
       <label for="lname">Last Name: </label>
       <input type="text" name="lastName" id="lname" placeholder="e.g. Kumar" />
@@ -109,8 +115,11 @@
       <label for="agree">I agree to the Terms and Conditions</label>
       <br /><br />
       <hr />
-      <input type="submit" value="Register" />
-      <input type="reset" value="Clear Form" />
+      <!-- Older methods -->
+      <!-- <input type="submit" value="Register" />
+      <input type="reset" value="Clear Form" /> -->
+      <button type="submit">Register</button>
+      <button type="reset">Clear Form</button>
     </form>
   </body>
 </html>
