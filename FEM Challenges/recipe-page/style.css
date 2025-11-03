@@ -1,0 +1,201 @@
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/outfit-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/fonts/outfit-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/outfit-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* young-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/young-serif-v2-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --c-rose-800: hsl(332, 51%, 32%);
+  --c-rose-50: hsl(330, 100%, 98%);
+  --c-stone-900: hsl(24, 5%, 18%);
+  --c-stone-600: hsl(30, 10%, 34%);
+  --c-stone-150: hsl(30, 18%, 87%);
+  --c-stone-100: hsl(30, 54%, 90%);
+  --c-brown-800: hsl(14, 45%, 36%);
+  --c-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  margin: 0; /* Keep only margin 0 */
+  @media (width >= calc((768 / 16) * 1rem)) {
+    background-color: var(--c-stone-100);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* these two lines will scale the image in the right proportion */
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-block-end: 24px;
+  @media (width >= calc((768 / 16) * 1rem)) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  color: var(--c-brown-800);
+  font-size: 1.5rem;
+  @media (width >= calc((768 / 16) * 1rem)) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  color: var(--c-stone-600);
+  margin-block-end: 32px;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+
+  li {
+    padding-left: 16px;
+    line-height: 1.75;
+  }
+  li::marker {
+    color: var(--c-brown-800);
+  }
+}
+
+section {
+  padding-block-end: 32px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid var(--c-stone-150);
+  }
+
+  th,
+  td {
+    padding-block: 20px;
+  }
+
+  th {
+    padding-inline: 20px 0px;
+    font-weight: 400;
+  }
+
+  td {
+    font-weight: 700;
+    color: var(--c-brown-800);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* or we can use grid
+    display: grid;
+    place-items: center;
+  */
+
+  @media (width >= calc((768 / 16) * 1rem)) {
+    padding-block: 8rem;
+  }
+}
+
+.recipe {
+  background-color: var(--c-white);
+
+  @media (width >= calc((768 / 16) * 1rem)) {
+    max-width: calc((616 / 16) * 1rem);
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  @media (width >= calc((1440 / 16) * 1rem)) {
+    max-width: calc((734 / 16) * 1rem);
+  }
+}
+
+.recipe__image {
+  @media (width >= calc((768 / 16) * 1rem)) {
+    border-radius: 12px;
+    margin-block-end: 40px;
+  }
+}
+
+.recipe__details {
+  @media (width <= calc((768 / 16) * 1rem)) {
+    padding: 40px 32px;
+  }
+
+  .card {
+    background-color: var(--c-rose-50);
+    padding: 24px;
+    /* padding-bottom: 0; */
+    border-radius: 12px;
+    /* margin-block-end: 32px; */
+
+    h2 {
+      color: var(--c-rose-800);
+      font-family: "Outfit", Arial, Helvetica, sans-serif;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--c-stone-150);
+  margin-block-end: 32px;
+}
+
+.nutrition {
+  p {
+    margin-block: 24px;
+  }
+}
