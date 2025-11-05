@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  padding-block: 16px;
+}
+
+.header.logo {
+  width: 4.95rem;
+}
+
+@media (width >= 50.625rem) {
+  .header {
+    padding-block: 24px;
+  }
+}

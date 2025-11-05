@@ -1,0 +1,18 @@
+.wrapper {
+  padding-inline: 20px;
+}
+
+/* for tablet - 810px */
+@media (width >= 50.625rem) {
+  .wrapper {
+    padding-inline: 44px;
+  }
+}
+
+/* for desktop - 1200px */
+@media (width >= 75rem) {
+  .wrapper {
+    max-width: 70rem; /* 1120px max content width */
+    padding-inline: 0;
+  }
+}
