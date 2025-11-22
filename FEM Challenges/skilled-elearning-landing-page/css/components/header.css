@@ -6,10 +6,6 @@
   padding-block: 16px;
 }
 
-.header.logo {
-  width: 4.95rem;
-}
-
 @media (width >= 50.625rem) {
   .header {
     padding-block: 24px;
